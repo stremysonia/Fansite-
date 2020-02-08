@@ -1,47 +1,76 @@
-html{
-  min-height: 100%;
-}
-body {
-  display: flex;
-  margin: 0;
- background-size: contain;
- background-position: center;
-  /* background-image: url("back.jpeg"); */
-  background-repeat: no-repeat;
-  text-align: center;
-  /* width: 100%;
-  height:auto; */
+* {
+  box-sizing: border-box;
 }
 
-.columns{
-  width: 33%;
-  filter: saturate(100%) grayscale(100%);
-  background-size: cover;
-  
-}
-
-#left-side {
-  height: 100vh;
-  background-image: url('bedroom.jpg');
-}
-
-#middle-side{
+.container {
   position: relative;
   text-align: center;
-  background-image: url('plant.jpg');
+}
+.centered h1 {
+  margin: 0;
+  font-size: 200px;
 }
 
-.middle-content{
-  text-align: center;
+.centered {
+  background-color:rgba(0, 0, 0, 0.4);
+  position: absolute;
+  top: 11.5%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   color: white;
-  list-style: none;
-}
-
-#right-side {
-  background-image: url('back.jpeg');
-}
-
-h1 {
+  font-family: 'Amatic SC', cursive;
   text-align: center;
+  letter-spacing: 40px;
+  font-stretch: extra-expanded;
+  margin: 0;
+  padding: 50px;
 }
-  
+
+.subtitles {
+  background-color:rgba(0, 0, 0, 0.4);
+  position: absolute;
+  top: 70%;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  color:white;
+  font-size: 2rem;
+  font-family: 'Amatic SC', cursive;
+  text-align: center;
+  list-style-type: none;
+  letter-spacing: 10px;
+  box-sizing: border-box;
+  margin: 0;
+  padding-left: 0;
+  display: block;
+  padding: 8px;
+}
+
+
+body .row .column {
+  margin: 0 auto;
+  background-color: black;
+}
+
+.header {
+  text-align: center; 
+  padding: 32px; 
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+.column {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px; 
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+}
+
+
